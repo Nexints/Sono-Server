@@ -1,50 +1,53 @@
-# NEXINT SOURCE-AVAILABLE & COPYLEFT PUBLIC LICENSE
-## Version 2.0 (September 2026)
+# LICENSE
 
-### 1. DEFINITIONS
-* **"Software"** means the original computer code, assets, documentation, and associated files distributed by Nexint under this License (including but not limited to the "Sono-Server" repository).
-* **"Fork" or "Derivative Work"** means any copy, modification, extension, or adaptation of the Software, whether hosted publicly on GitHub or deployed elsewhere.
-* **"Commercial Entity"** means any individual, corporation, partnership, or organization that generates **$1,000,000 USD or more** in gross annual revenue from all sources.
-* **"Eligible Developer"** means any individual or entity that generates **less than $1,000,000 USD** in gross annual revenue.
+## Sono-Server Source-Available Copyleft License
+**Version 1.1 (September 2026)**
+
+Copyright (c) 2026 Nexint. All rights reserved.
 
 ---
 
-### 2. GRANT OF RIGHTS & EXTENSION TO FORKS
-Subject to the terms and restrictions outlined below, Nexint grants Eligible Developers a non-exclusive, worldwide, royalty-free, non-transferable license to:
-* View, download, and host the source code of the Software.
-* Use the "Fork" feature on platforms like GitHub to create copies for personal use, localized testing, and development.
-* Modify, adapt, or build upon the Software.
+### 1. Overview
+This software ("Sono-Server") is proprietary and source-available. By downloading, installing, forking, hosting, or otherwise interacting with the source code or compiled binaries of this software, you agree to be bound by the terms and conditions outlined in this License and the overarching Nexint Terms of Service (TOS).
 
 ---
 
-### 3. THE PROPRIETARY COPYLEFT LOOP (SHARE-ALIKE)
-To maintain the open, collaborative ecosystem of the Software, the following conditions apply to all modifications:
-* **Reciprocal Openness:** If you fork, alter, or create a Derivative Work of this Software, your modified source code **must remain fully public and source-available**. You are strictly prohibited from turning your fork into a closed-source project.
-* **Licensing Constraint:** You **must** distribute your Fork under this exact same License (the Nexint Source-Available & Copyleft Public License). You may not apply alternative open-source licenses (such as MIT, Apache, or GPL) or proprietary licenses to your Fork.
+### 2. Limited Forking & Modification Grant
+Subject to the restrictions outlined below, Nexint grants eligible individuals a limited, non-exclusive, non-transferable, royalty-free license to use the "Fork" feature on GitHub.com to create a copy of the Sono-Server repository. You are permitted to modify the source code (including but not limited to configurations, handlers, and the engine pool) exclusively for personal evaluation, localized testing, and submitting contributions (Pull Requests) back to the official upstream repository.
 
 ---
 
-### 4. NEXINT'S UNREVOCABLE LICENSE TO FORKS
-By creating a Fork, modifying the Software, or submitting changes publicly, you explicitly grant a legal safety net back to the original author:
-* **Upstream Grant:** You hereby grant to Nexint a perpetual, irrevocable, worldwide, royalty-free, fully sublicensable, non-exclusive license to use, reproduce, modify, adapt, publish, translate, distribute, perform, and display any and all code, logic, features, patches, or optimizations introduced in your Fork.
-* **Implementation Right:** Nexint retains the absolute right to pull any changes, bug fixes, or enhancements from your public Fork back into the official upstream Software repository without requiring additional permission or providing compensation.
+### 3. Reciprocal Source-Available Copyleft & Network Use (The SaaS Guardrail)
+This license enforces a strict reciprocal ("ShareAlike") copyleft mechanism to prevent closed-source exploitation:
+* **Mandatory Public Availability:** Any fork, modification, alteration, patch, or derivative work built upon Sono-Server must be hosted in a completely public repository and distributed under these exact same terms. You may not apply alternative licenses or restrict access to your source code.
+* **Network Interaction Counts as Distribution:** If you host, run, or execute a modified version of Sono-Server that allows users to interact with it over a network (such as web sockets, APIs, or internet-accessible gameplay simulation), you **must** immediately make the complete, modified source code of your instance publicly available online under this exact license.
 
 ---
 
-### 5. BRANDING & TRADEMARK ISOLATION
-To prevent player confusion and protect the platform's identity, forks must be distinct:
-* **Stripping Brand Assets:** If you host, run, or publish a modified Fork of the Software, you must completely remove all Nexint logos, branding materials, and official trademarks from the project interface.
-* **Naming Conventions:** Your project must be given a distinctly different name (e.g., "Custom-Sono-Server") and must clearly state in its README.md file that it is an *unofficial community fork independent of Nexint*.
+### 4. Irrevocable Upstream License Grant
+By creating a fork, making a modification, or deploying a derivative version of Sono-Server, you automatically and unconditionally grant Nexint a perpetual, irrevocable, worldwide, non-exclusive, royalty-free, fully paid-up license to copy, distribute, modify, merge, optimize, or sublicense any and all changes or additions you make. This ensures Nexint can freely pull community improvements and bug fixes directly back into the official upstream repository.
 
 ---
 
-### 6. COMMERCIAL EXCLUSIONS & REVENUE THRESHOLDS
-* **Corporate Restrictions:** Commercial Entities are strictly prohibited from forking, modifying, hosting, or using this Software for commercial or deployment purposes.
-* **Waiver Requirement:** Any usage by an organization meeting or exceeding the **$1,000,000 USD annual revenue cap** requires an explicit, separately negotiated, written corporate license directly from Nexint.
+### 5. Financial Scale & Corporate Restrictions ($1,000,000 USD Cap)
+The rights to fork, modify, redistribute, or run instances of this software are strictly restricted by commercial scale:
+* **Eligible Entities:** This license is granted exclusively to individuals and corporate entities that generate less than **$1,000,000 USD in annual gross revenue**.
+* **Unified Corporate Control Rule:** The $1,000,000 USD threshold includes the combined gross revenue of the acting entity, its parent companies, affiliates, shell entities, and any subsidiaries under unified corporate control.
+* **Enterprise Requirements:** Any entity exceeding this revenue threshold is strictly prohibited from forking, modifying, hosting, or executing this software without obtaining a separate, explicit written commercial license from Nexint.
 
 ---
 
-### 7. VIDEO & MEDIA ATTRIBUTION
-All media and gameplay rights established under the baseline Nexint Terms of Service remain fully intact:
-* You may record and monetize gameplay videos featuring this Software on platforms like YouTube or Twitch (subject to the $1,000,000 revenue cap).
-* Mandatory attribution must be preserved, including providing a direct, clear link to the asset source (`https://nexint.ca/charts`) or the official repository in your video description.
+### 6. Branding & Trademark Isolation
+To avoid consumer confusion, any public deployment or fork of this software must completely isolate itself from official Nexint branding:
+* You must completely remove all Nexint logos, imagery, and official brand marks from your distribution.
+* The public name of your fork or server instance must be distinctly different from "Nexint" or "Sono-Server" to ensure players do not mistake it for an official Nexint product or platform service.
+
+---
+
+### 7. Mandatory Attribution
+Any public distribution or hosted instance of this software must preserve all original Nexint copyright notices. If your fork or server is referenced in media, documentation, or public gameplay videos, you must include a prominent, visible link back to the official asset source at `https://nexint.ca`.
+
+---
+
+### 8. Disclaimer of Warranty
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
