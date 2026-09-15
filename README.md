@@ -24,4 +24,6 @@ Node.js is required for this server.
 
 This code is under the [Nexint TOS](https://nexint.ca/tos)
 
+However, the [Nexint TOS](https://nexint.ca/tos) is not fully complete, and you should use the included LICENSE.MD file instead.
+
 This code is proprietary and source available.
