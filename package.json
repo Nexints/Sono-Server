@@ -1,0 +1,33 @@
+{
+  "name": "sonolus.js-template-js",
+  "version": "1.5.2",
+  "description": "Sonolus.js Template (JS)",
+  "private": true,
+  "scripts": {
+    "dev-play": "sonolus-cli --dev ./play",
+    "dev-watch": "sonolus-cli --dev ./watch",
+    "dev-preview": "sonolus-cli --dev ./preview",
+    "dev-tutorial": "sonolus-cli --dev ./tutorial",
+    "build-engine": "sonolus-cli --build ./play && sonolus-cli --build ./watch && sonolus-cli --build ./preview && sonolus-cli --build ./tutorial",
+    "pack-server": "sonolus-pack",
+    "start": "node index.js",
+    "dev-server": "sonolus-pack && node index.js",
+    "build:cli-exe": "boxednode --source install.js --target dist/sono-server.exe --openssl-no-asm"
+  },
+  "devDependencies": {
+    "@sonolus/core": "~7.15.3",
+    "@sonolus/sonolus.js": "~9.7.3",
+    "boxednode": "^3.0.1",
+    "esbuild": "^0.28.2"
+  },
+  "dependencies": {
+    "@sonolus/express": "^7.5.4",
+    "@sonolus/pack": "^5.5.1",
+    "adm-zip": "^0.6.1",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.0",
+    "ffmpeg-static": "^5.3.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "sharp": "^0.35.4"
+  }
+}

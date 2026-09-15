@@ -1,0 +1,11 @@
+{
+    "version": 13,
+    "title": "Next Sekai Engine",
+    "subtitle": "Next Sekai Engine",
+    "author": "Burrito",
+    "skin_name": "ProSekaFaithful",
+    "background_name": "Nexint-V4-BG-min",
+    "effect_name": "coconut-next-sekai-1",
+    "particle_name": "NexintWaterMark",
+    "description": "\nPerspective-lane rhythm game for Sonolus\n\nhttps://github.com/Next-SEKAI/sonolus-next-sekai-engine"
+}
