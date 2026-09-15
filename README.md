@@ -1,4 +1,6 @@
-# Sonolus.js Template (JS)
+# Sono-Server
+
+This acts as a quick little sonolus server
 
 ## Prerequisites
 
@@ -10,50 +12,16 @@
 
 ## Get Started
 
-To get this template, run (change `my-project` to desired name):
+Run `npm i` in this directory
 
-```
-npx degit Sonolus/sonolus.js-template-js my-project
-```
+Run this server by running `node install.js`, which configures first time setup for you.
 
-To install dependencies, run in project directory:
+This server comes pre-bundled with ProSeka Faithful
 
-```
-npm i
-```
+Node.js is required for this server.
 
-## Start Dev Server
+## Legal
 
-Run in project directory:
+This code is under the [Nexint TOS](https://nexint.ca/tos)
 
-```
-npm run dev-play
-```
-
-```
-npm run dev-watch
-```
-
-```
-npm run dev-preview
-```
-
-```
-npm run dev-tutorial
-```
-
-A dev server will be up and running. You can connect to it using Sonolus app and play test the level.
-
-Changes made to the project will be automatically detected and trigger rebuild.
-
-Temporary files and extraction artifacts can be found in `.dev`.
-
-## Build
-
-Run in project directory:
-
-```
-npm run build
-```
-
-Build artifacts can be found in `dist`.
+This code is proprietary and source available.
