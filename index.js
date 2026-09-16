@@ -7,6 +7,15 @@ const AdmZip = require('adm-zip');
 const rateLimit = require('express-rate-limit');
 const readline = require('readline');
 
+// Define the process directory
+// Just to sync up the process of making a new directory.
+try {
+  process.chdir(__dirname);
+  console.log(`New directory: ${process.cwd()}`);
+} catch (err) {
+  console.error(`Error changing directory: ${err}`);
+}
+
 // Start
 const startTime = Date.now();
 let newStart = Date.now();

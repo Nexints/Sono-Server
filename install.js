@@ -12,6 +12,15 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+// Define the process directory
+// Just to sync up the process of making a new directory.
+try {
+  process.chdir(__dirname);
+  console.log(`New directory: ${process.cwd()}`);
+} catch (err) {
+  console.error(`Error changing directory: ${err}`);
+}
+
 const askQuestion = (query) => new Promise((resolve) => rl.question(query, resolve));
 
 async function runInstallationPass() {
@@ -204,7 +213,11 @@ async function runInstallationPass() {
         }
 
         console.log('\n📦 Linking Loose Chart Core Assets to Directory Workspace...');
-        const jacketInput = await askQuestion('🖼️  DRAG & DROP your Jacket / Cover artwork image (.png, .webp, .jpg):\n> ');
+        let jacketInput = await askQuestion('🖼️  DRAG & DROP your Jacket / Cover artwork image (.png, .webp, .jpg):\n> ');
+        if(jacketInput == ""){
+            jacketInput = path.join(__dirname, "placeholder", "placeholder.png");
+            console.log("Loading Placeholder Image...")
+        }
         await processAndLinkAsset(jacketInput, targetSongFolder, 'jacket.png');
 
         const musicInput = await askQuestion('🎵 DRAG & DROP your Audio Track file (.mp3, .wav, .ogg, .m4a):\n> ');
