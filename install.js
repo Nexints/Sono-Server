@@ -31,16 +31,16 @@ async function runInstallationPass() {
     let normalizedChoice = '1';
 
     if (!uploadsExist && !levelsExist) {
-        console.log('ℹ️  [System Status Notice]: Missing baseline levels metadata and active target .scp package files.');
-        console.log('👉 Auto-triggering setup mode... Initializing a fresh workspace.');
-        normalizedChoice = '1'; 
+        console.log('[WARN] Setup files either do not exist, or were corrupted.');
+        console.log('[INFO] Triggering First Time Setup');
+        normalizedChoice = '0'; // option 0 for future reference 
     } else {
-        console.log('1. 🚀 Run Sonolus Server Immediate Boot Sequence');
-        console.log('2. Add a new level (Create from loose assets; preserves uploads)');
-        console.log('3. 📝 Modify an existing level (Edit metadata details / Swap assets)');
-        console.log('4. Replace active chart archive (Update the main server profile .scp file)');
-        console.log('5. Nuke all levels & start completely fresh (Wipe everything)');
-        console.log('6. 🚪 Exit Setup Wizard');
+        console.log('1. Run the Sonolus Server');
+        console.log('2. Add a new level');
+        console.log('3. Modify an existing level');
+        console.log('4. Manage the existing .scp files');
+        console.log('5. Nuke everything and start again.');
+        console.log('6. Exit this GUI');
         
         const choice = await askQuestion('\n📋 Select an installation path (Enter 1, 2, 3, 4, 5, or 6):\n> ');
         normalizedChoice = choice.trim();
